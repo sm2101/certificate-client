@@ -5,7 +5,7 @@ const InputForm = () => {
   const [name, setName] = useState(""),
     [role, setRole] = useState(""),
     [course, setCourse] = useState("");
-  const server = process.env.API || "http://localhost:8000";
+  const server = "https://certificate-server-2101.herokuapp.com";
   const createAndDownloadPdf = () => {
     axios
       .post(`${server}/create-pdf`, {
